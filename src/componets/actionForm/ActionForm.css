@@ -1,0 +1,33 @@
+
+.btn-submit{
+    background-color: var(--main-color) !important;
+    margin-top: 10px;
+}
+
+.modal-form{
+    background-color: #fff;
+    width: 300px;
+    padding: 40px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.modal-form .MuiInputBase-root{
+    margin: 30px 20px;
+}
+
+.modal-form .MuiButtonBase-root{
+    margin-top: 20px !important;
+}
+
+.modal-form .MuiFormControl-root label{
+    margin-left: 20px;
+}
+
+.modal .close-btn{
+    position: fixed !important;
+    right: 0 !important;
+}

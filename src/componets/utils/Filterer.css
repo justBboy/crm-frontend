@@ -1,0 +1,9 @@
+.filterer{
+    width: 200px;
+    margin: 0 10px;
+}
+
+.filterer-container{
+    display: flex;
+    align-items: flex-start;
+}

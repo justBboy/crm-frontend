@@ -1,0 +1,242 @@
+.sidebar{
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background: var(--main-color);
+    color: #efefef;
+    transition: width 500ms;
+}
+
+@media (max-width: 1000px){
+    .sidebar{
+        width: 60px;
+    }
+}
+
+.sidebar-header{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    padding: 0rem 1rem;
+}
+.sidebar-menu{
+    padding: 1rem;
+}
+.sidebar-menu li{
+    margin-bottom: 1.2rem;
+
+}
+.sidebar a{
+    color: #efefef;
+    font-size: .9rem;
+}
+
+.sidebar a span:last-child{
+    padding-left: .6rem;
+}
+
+.search-content{
+    position: relative;
+    height:9vh;
+    top: 0;
+    margin-left: 240px;
+} 
+ .list{
+   font-size: 1rem;
+   line-height: 1rem;
+    position: relative;
+    bottom: 5px;
+  
+}
+
+.search-content header{
+    position: fixed;
+    top: 0;
+    left: 240px;
+    right: 0;
+    width: auto;
+    z-index: 100;
+    background: #fff;
+    height: 60px;
+    padding: 0rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    transition: left 500ms;
+
+}
+.search-wrapper{
+    display: flex;
+    flex: 1;
+}
+.sh{
+    padding-top: .6rem;
+}
+.search-wrapper .MuiFormControl-root{
+    overflow: hidden;
+    width: 100%;
+    padding: 1rem;
+}
+
+.search-wrapper .MuiFormControl-root label{
+    margin: 10px;
+}
+
+@media (max-width: 550px){
+    .search-wrapper .MuiFormControl-root label{
+        margin-top: -5px;
+    }
+    .search-wrapper .MuiFormControl-root{
+    }
+}
+
+.social-icons{
+    display: flex;
+    margin-right: .7rem;
+}
+.social-icons span{
+    padding-top: .7rem;
+}
+.social-icons span,
+.social-icons div{
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.social-icons .image img{
+height: 40px;
+width: 40px;
+background-size: cover;
+background-repeat: no-repeat;
+border-radius: 50%;
+
+}
+#sidebar-toggle{
+    display: none;
+}
+
+
+#sidebar-toggle:checked ~ .sidebar .sidebar-header h3 span:last-child,
+#sidebar-toggle:checked ~ .sidebar li span:last-child,
+#sidebar-toggle:checked ~ .sidebar .sidebar-header .name{
+    display: none;
+}
+#sidebar-toggle:checked ~ .sidebar .sidebar-header,
+#sidebar-toggle:checked ~ .sidebar li{
+    display: flex;
+    justify-content: center;
+}
+
+ .none{
+    display: none;
+    opacity: 0;
+}
+.initial{
+    display: initial;
+    opacity: 1;
+}
+#list-icon{
+    
+    top: .3rem;
+    left: 2.9rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+#open{
+    cursor: pointer;
+    top: .2rem;
+    font-size: 2rem;
+    left: 1rem;
+} 
+#reduce{
+    width: 60px !important;
+    padding-top: 1rem;
+    transition: .5s;
+}
+
+#sidebar-toggle:checked ~ .search-content{
+    margin-left: 60px;
+       
+}
+#sidebar-toggle:checked ~ .search-content header{
+    left: 60px;
+    right: 0;
+}
+
+@media only screen and (max-width:1000px){
+ .sidebar{
+     width: 60px;
+     z-index: 200;
+ }
+ .main-content{
+    left: 60px;
+    width: calc(100% - 60px);
+    
+ }
+ #reduce{
+    width: 240px !important;
+    padding-top: 1rem;
+    transition: .5s;
+}
+.search-content header{
+    left: 60px;
+}
+  .sidebar .sidebar-header h3 span,
+.sidebar li span:last-child,
+ .sidebar .sidebar-header .name{
+    display: none;
+}
+ .sidebar .sidebar-header,
+ .sidebar li{
+    display: flex;
+    justify-content: center;
+}
+#sidebar-toggle:checked ~ .sidebar {
+    width: 240px;
+}
+
+
+#sidebar-toggle:checked ~ .sidebar .sidebar-header h3 span:last-child,
+#sidebar-toggle:checked ~ .sidebar li span:last-child,
+#sidebar-toggle:checked ~ .sidebar .sidebar-header .name{
+    display: initial;
+}
+#sidebar-toggle:checked ~ .sidebar .sidebar-header{
+    display: flex;
+    justify-content: space-around;
+}
+
+#sidebar-toggle:checked ~ .sidebar li{
+    display: block;
+}
+.chat-container{
+    position: relative;
+    left: 60px;
+    width: calc(100% - 60px);
+
+}
+
+}
+
+.image{
+    margin-top: -20px;
+}
+
+.btn-lg{
+    width: 100%;
+    height: 30px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.btn-lg:hover{
+    text-decoration: underline;
+    transform: scale(1.03);
+}

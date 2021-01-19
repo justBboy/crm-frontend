@@ -1,0 +1,113 @@
+.main-signup{
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f5f9; 
+    transition: all .5s ease;
+}
+#sidebar-toggle:checked ~ .main-signup{
+    margin-left: 60px;
+    left: 0;
+    width: calc(100% - 60px);
+    transition: .5s ease;
+}
+
+.form-container{
+    background: #fff;
+    width: 400px;
+    height: 400px;
+    margin-top: 2rem;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 150px;
+    display: inline-block;
+}
+.log-btn{
+    display: inline-block;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    border-radius: 3rem;
+    padding: .5rem 3rem;
+    font-size: 1.1rem;
+    color: #fff;
+    background: var(--main-color);
+    outline: none;
+}
+.form-container form{
+    max-width: 340px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: all 1s ease;
+}
+.form-container form input{
+    width:100% ;
+    height: 35px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+#form-login{
+    left: -350px;
+}
+#form-register{
+    
+}
+form a{
+    font-size: 12px;
+}
+#underline{
+    width: 110px;
+    border: none;
+    background: var(--main-color);
+    height: 3px;
+    margin: 8px 1rem;
+    transform: translateX(150px);
+    transition: all 1s ease;
+ 
+    
+}
+
+@media only screen and (max-width:500px){
+    .form-container{
+        width: 300px;
+    }
+    .form-container span{
+        width: 100px;
+       
+    }
+    #underline{
+        width: 90px;
+        border: none;
+        background: var(--main-color);
+        height: 3px;
+        margin: 8px 1rem;
+        transform: translateX(90px);
+        transition: all 1s ease;
+     
+        
+    }
+    #form-login{
+        width: 300px;
+    }
+}
